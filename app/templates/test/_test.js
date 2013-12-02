@@ -1,5 +1,6 @@
 'use strict';
 
+var module = require('../src/<%= _.slugify(projectName) %>');
 var assert = chai.assert;
 
 describe('Your Module', function () {

@@ -53,7 +53,7 @@ BasicGenerator.prototype.app = function app() {
   this.copy('Gruntfile.js', 'Gruntfile.js');
 
   this.copy('test/index.html', 'test/index.html');
-  this.copy('test/test.js', 'test/test.js');
+  this.template('test/_test.js', 'test/test.js');
 };
 
 BasicGenerator.prototype.projectfiles = function projectfiles() {
